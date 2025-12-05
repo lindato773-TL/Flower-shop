@@ -1,0 +1,95 @@
+body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  /* background: #f9f9f9; */
+}
+
+header {
+  background: white;
+  color: pink;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+  /* background: #e8f5e9; */
+  width: 100%;
+  color: gray;
+}
+
+.gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.flower-container1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flower-container2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flower-card {
+  background: white;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.flower-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  background: pink;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(235, 221, 224);
+}
+
+.cart {
+  padding: 20px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}

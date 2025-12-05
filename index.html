@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flower Shop</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+  </head>
+  <style>
+    body {
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  /* background: #f9f9f9; */
+}
+
+header {
+  background: white;
+  color: pink;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px;
+  /* background: #e8f5e9; */
+  width: 100%;
+  color: gray;
+}
+
+.gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.flower-container1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flower-container2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flower-card {
+  background: white;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.flower-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  background: pink;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(235, 221, 224);
+}
+
+.cart {
+  padding: 20px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+  </style>
+  <body>
+    <header>
+      <h1>🌸 LADY SHOP FLOWER</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Fresh Flowers Everyday</h2>
+      <p>Beautiful bouquets for every occasion.</p>
+    </section>
+
+    <section class="gallery">
+      <h2>Our Flowers</h2>
+      <div class="container">
+        <div class="flower-container1">
+          <div class="flower-card">
+            <img
+              src="https://i.pinimg.com/1200x/97/9e/25/979e2524ed2f667253976915d0fb06d7.jpg"
+              alt="Rose"
+            />
+            <h3>Rose</h3>
+            <p>$15</p>
+            <p>Best for someone you like, care about, or appreciate.🌹</p>
+            <button onclick="addToCart('Rose', 5)">Add to Cart</button>
+          </div>
+          <div class="flower-card">
+            <img
+              src="https://i.pinimg.com/1200x/f9/80/47/f9804765aed6e270dcc5c59f3fd1820e.jpg"
+              alt="Sunflower"
+            />
+            <h3>Sunflower</h3>
+            <p>$8.5</p>
+            <p>
+              Sunflowers symbolize happiness, loyalty, and positive energy.🌻
+            </p>
+            <button onclick="addToCart('Sunflower', 7)">Add to Cart</button>
+          </div>
+          <div class="flower-card">
+            <img
+              src="https://i.pinimg.com/736x/f6/e4/54/f6e45463922b386c9efaac9934152445.jpg"
+              alt="Orchid"
+            />
+            <h3>Orchid</h3>
+            <p>$14.5</p>
+            <p>For Beauty, elegance, someone special.🌸</p>
+            <button onclick="addToCart('Orchid', 8)">Add to Cart</button>
+          </div>
+          <div class="flower-card">
+            <img
+              src="https://i.pinimg.com/1200x/32/e5/b9/32e5b915136533a4acb23cf77771d785.jpg"
+              alt="Lily"
+            />
+            <h3>Lily</h3>
+            <p>$14</p>
+            <p>Symbolizes innocence, fresh starts, and elegance.🌺</p>
+            <button onclick="addToCart('Lily', 6)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="flower-container2">
+          <div class="flower-card">
+            <img
+              src="https://i.pinimg.com/736x/5c/b9/ea/5cb9eae210bbe1d441bbb89b6ceeee2f.jpg"
+              alt="Jasmine"
+            />
+            <h3>Jasmine</h3>
+            <p>$10</p>
+            <p>
+              It's often symbolizes sweet fragrance, gentle beauty, and
+              spiritual charm.🌿
+            </p>
+            <button onclick="addToCart('Jasmine', 7)">Add to Cart</button>
+          </div>
+          <div class="flower-card">
+            <img
+              src="https://i.pinimg.com/1200x/5b/86/3a/5b863a35ab6c70197fa28865e63f1a97.jpg"
+              alt="Daisy"
+            />
+            <h3>Daisy</h3>
+            <p>$7</p>
+            <p>
+              Daisies are simple, cheerful flowers that symbolize purity,
+              innocence, and new beginnings.🌼
+            </p>
+            <button onclick="addToCart('Daisy', 7)">Add to Cart</button>
+          </div>
+          <div class="flower-card">
+            <img
+              src="https://i.pinimg.com/1200x/d4/f4/98/d4f498ee3c0ff8c2943ccf0e282087e4.jpg"
+              alt="Lotus"
+            />
+            <h3>Lotus</h3>
+            <p>$10</p>
+            <p>
+              Best for represents spiritual growth, overcoming challenges, and
+              new beginnings.🌸
+            </p>
+            <button onclick="addToCart('Lotus', 7)">Add to Cart</button>
+          </div>
+          <div class="flower-card">
+            <img
+              src="https://i.pinimg.com/1200x/75/18/e2/7518e26d7ef840d417ed9751df78224f.jpg"
+              alt="Tulip"
+            />
+            <h3>Tulip</h3>
+            <p>$11</p>
+            <p>
+              Tulips are best for occasions where you want to express love,
+              appreciation, or cheerfulness. 🌷
+            </p>
+            <button onclick="addToCart('Tulip', 5)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>🛒 Shopping Cart</h2>
+      <ul id="cartList"></ul>
+      <p>Total: $<span id="cartTotal">0</span></p>
+    </section>
+
+    <script src="script.js">
+          let cart = [];
+      let total = 0;
+
+      function addToCart(flower, price) {
+        cart.push({ flower, price });
+        total += price;
+        updateCart();
+      }
+
+      function updateCart() {
+        const cartList = document.getElementById("cartList");
+        cartList.innerHTML = "";
+        cart.forEach(item => {
+          const li = document.createElement("li");
+          li.textContent = `${item.flower} - $${item.price}`;
+          cartList.appendChild(li);
+        });
+        document.getElementById("cartTotal").textContent = total;
+      }
+    </script>
+  </body>
+</html>
