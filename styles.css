@@ -1,20 +1,29 @@
 body {
-  /* font-family: Arial, sans-serif; */
   margin: 0;
-  /* background: #f9f9f9; */
+  box-sizing: border-box;
+  padding: 0;
 }
 
 header {
   background: white;
-  color: pink;
+  color: rgba(105, 165, 165, 0.467);
   padding: 15px;
   text-align: center;
   width: 100%;
   justify-content: center;
   align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 1000;
+  font-size: 30px;
 }
-.h1{
-    font-family: 'Times New Roman', Times, serif;
+main {
+  width: 1000px;
+  margin-inline: auto;
+  text-align: center;
+}
+.h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 1000;
 }
 
 nav ul {
@@ -29,32 +38,42 @@ nav ul li {
 }
 
 nav ul li a {
-  color: gray;
+  color: rgb(73, 70, 70);
   text-decoration: none;
 }
 
 .hero {
   text-align: center;
   padding: 40px;
-  /* background: #e8f5e9; */
+  background: #e8f5e9;
   width: 100%;
-  color: gray;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  text-align: center;
+  padding: 40px;
+  background: #bdd7bf;
+  width: 100%;
 }
 
-.gallery {
-  padding: 20px;
-  text-align: center;
+.gallery h2 {
+  color: rgba(105, 165, 165, 0.467);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
 }
 
 .flower-container1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 .flower-container2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .flower-card {
@@ -62,8 +81,8 @@ nav ul li a {
   margin: 10px;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 20%;
 }
 
 .flower-card img {
@@ -72,7 +91,7 @@ nav ul li a {
 }
 
 button {
-  background: pink;
+  background: rgb(111, 169, 111);
   color: white;
   border: none;
   padding: 8px 12px;
@@ -90,6 +109,6 @@ button:hover {
   background: #fff;
   margin: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
